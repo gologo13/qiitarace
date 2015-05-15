@@ -1,0 +1,26 @@
+{
+  "name": "qiita-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for Qiita",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gologo13/qiita-scraper.git"
+  },
+  "keywords": [
+    "scraping",
+    "qiita"
+  ],
+  "author": "Yohei Yamaguchi <joker13meister@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gologo13/qiita-scraper/issues"
+  },
+  "homepage": "https://github.com/gologo13/qiita-scraper",
+  "dependencies": {
+    "scraper": "0.0.9"
+  }
+}
