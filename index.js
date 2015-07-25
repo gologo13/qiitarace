@@ -6,13 +6,13 @@ var cheerio = require('cheerio');
 var request = require('request');
 var Promise = require('bluebird');
 
-var users = ["gologo13", "ktsukago",
-"dai___chi",
-"uny",
-"m_nakamura145",
-"haijima",
-"nabenabeq",];
-var results = [];
+var argv = require('minimist')(process.argv.slice(2));
+
+if (!argv.u) {
+  return console.log("Usage: node index.js -u user1,user2,user3");
+}
+
+var users = argv.u.split(",");
 
 Promise
 .settle(users.map(function(user) {
