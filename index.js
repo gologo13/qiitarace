@@ -24,7 +24,7 @@ Promise
 
       return resolve({
         user: user,
-        score: $('span.userPage_contributionCount').text()
+        score: parseInt($('span.userPage_contributionCount').text(), 10)
       });
     });
   });
@@ -38,7 +38,7 @@ Promise
     return result.value();
   })
   .sort(function(a, b) {
-    return parseInt(a["score"], 10) < parseInt(b["score"], 10);
+    return a.score < b.score;
   })
   .forEach(function(result) {
     console.log("%s\t%d", result.user, result.score);
