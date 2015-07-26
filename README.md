@@ -5,7 +5,7 @@ This script generates a ranking of [Qiita](http://qiita.com/) contributions.
 ## Installation
 
 ```sh
-$ npm install qiitarace
+$ npm install qiitarace -g
 ```
 
 ## Usage
