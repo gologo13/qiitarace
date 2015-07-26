@@ -1,16 +1,33 @@
 # Qiitarace
 
-## Usage
+This script generates a ranking of [Qiita](http://qiita.com/) contributions.
+
+## Installation
 
 ```sh
-$ node index.js -u user1,user2,user3,...
+$ npm install qiitarace
 ```
 
-## Example
+## Usage
+
+### Ranking with a user list.
+
+Specify a user list as a connma separated string with `-u` option.
 
 ```sh
-$ node index.js -u gologo13,ktsukago
+$ qiitarace -u gologo13,ktsukago
 
 gologo13        357
 ktsukago        10
+```
+
+### Ranking of an organization.
+
+Specify a qiita organization with `-o` option.
+
+```sh
+$ qiitarace -o recruitlifestyle
+
+gologo13        357
+...
 ```
