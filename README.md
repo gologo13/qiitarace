@@ -1,4 +1,8 @@
-# Qiitarace
+Qiitarace
+===========
+
+[![NPM](https://nodei.co/npm/qiitarace.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/qiitarace/)
+
 
 This script generates a ranking of [Qiita](http://qiita.com/) contributions.
 
